@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<title>Edit Tutorial</title>
+
+{% block body %}
+
+    {{ include('tutorial/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('admin_index') }}">back to list</a>
+
+    {{ include('tutorial/_delete_form.html.twig') }}
+{% endblock %}

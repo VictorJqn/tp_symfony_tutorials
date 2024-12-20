@@ -1,0 +1,12 @@
+App\Entity\Subject:
+  subject_1:
+    name: "Programming"
+    
+  subject_2:
+    name: "Design"
+  subject_3:
+    name: "Mathematics"
+  subject_4:
+    name: "Science"
+  subject_5:
+    name: "History"

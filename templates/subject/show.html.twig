@@ -1,0 +1,23 @@
+{% extends 'index.html.twig' %}
+
+{% block title %}{{ subject.name }}{% endblock %}
+
+{% block body %}
+<div class="container mx-auto p-6 bg-white">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Tutoriels de {{ subject.name }}</h1>
+
+    {% if subject.tutorials is not empty %}
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for tutorial in subject.tutorials %}
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">{{ tutorial.title }}</h2>
+                    <p class="text-gray-600 mb-4">{{ tutorial.description }}</p>
+                    <a href="{{ path('app_tutorial_show', {'id': tutorial.id}) }}" class="text-blue-500 hover:underline">Voir le tutoriel</a>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="text-center text-gray-500">Aucun tutoriel disponible pour ce sujet.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+<title>New Tutorial</title>
+
+{% block body %}
+
+    {{ include('tutorial/_form.html.twig') }}
+
+    <a href="{{ path('admin_index') }}">back to list</a>
+{% endblock %}

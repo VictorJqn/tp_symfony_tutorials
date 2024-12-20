@@ -1,0 +1,55 @@
+{% extends 'index.html.twig' %}
+
+{% block title %}
+	{{ chapter.title }}
+	- Chapter Details
+{% endblock %}
+
+{% block body %}
+	<div
+		class="container mx-auto p-6">
+		<!-- Chapitre Title -->
+		<div class="mb-8">
+			<h1 class="text-3xl font-bold text-gray-900">{{ chapter.title }}</h1>
+		</div>
+
+		<!-- Chapitre Content -->
+		<div class="prose prose-lg mb-8">
+			<p>{{ chapter.content }}</p>
+		</div>
+
+		<!-- Commentaires Section -->
+		<div class="mb-8">
+			<h2 class="text-2xl font-semibold text-gray-800">Commentaires</h2>
+			<div class="mt-4 space-y-4">
+				{% for comment in chapter.comments %}
+					<div class="p-4 border rounded-lg bg-gray-100">
+						<div class="flex justify-between items-center">
+							<p class="font-semibold text-sm text-gray-700">{{ comment.author.name }}
+								-   
+								{{ comment.publishedAt|date('d M Y') }}</p>
+						</div>
+						<p class="mt-2 text-gray-700">{{ comment.content }}</p>
+					</div>
+				{% else %}
+					<p class="text-gray-500">Il n'y a pas encore de commentaires pour ce chapitre.</p>
+				{% endfor %}
+			</div>
+		</div>
+
+		{% if app.user %}
+			<div class="mt-8 p-4 border-t border-gray-200">
+				<h3 class="text-xl font-semibold text-gray-800">Ajouter un commentaire</h3>
+				<form method="post" action="{{ path('comment_create', {'chapterId': chapter.id}) }}">
+					<div class="mt-4">
+						<textarea name="content" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Écrivez votre commentaire..."></textarea>
+					</div>
+					<div class="mt-4">
+						<button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Ajouter le commentaire</button>
+					</div>
+				</form>
+			</div>
+		{% endif %}
+
+	</div>
+{% endblock %}

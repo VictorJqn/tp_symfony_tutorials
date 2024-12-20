@@ -1,0 +1,26 @@
+{% extends 'index.html.twig' %}
+
+{% block title %}{{ tutorial.title }} - Tutoriel{% endblock %}
+
+{% block body %}
+<div class="container mx-auto p-4">
+    <!-- Header du Tutoriel -->
+    <div class="mb-8">
+        <h1 class="text-4xl font-semibold text-gray-800">{{ tutorial.title }}</h1>
+        <p class="text-lg text-gray-600 mt-2">{{ tutorial.description }}</p>
+    </div>
+
+    <!-- Liste des Chapitres -->
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {% for chapter in tutorial.chapters|sort((a, b) => a.orderTutorial <=> b.orderTutorial) %}
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <h2 class="text-2xl font-semibold text-blue-600">{{chapter.orderTutorial}}. {{ chapter.title }}</h2>
+                <p class="text-gray-600 mt-2">{{ chapter.content[:150] }}...</p>
+                <a href="{{ path('app_chapters_show', {'id': chapter.id}) }}" class="text-blue-500 mt-4 inline-block">Lire le chapitre</a>
+            </div>
+        {% else %}
+            <p class="text-gray-500">Il n'y a pas de chapitres disponibles pour ce tutoriel.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

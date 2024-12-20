@@ -1,0 +1,283 @@
+App\Entity\Chapters:
+  chapter_1:
+    title: "Getting Started"
+    content: "This chapter covers the basics of programming."
+    orderTutorial: 1
+    tutorial: "@tutorial_1"
+
+  chapter_2:
+    title: "Variables and Data Types"
+    content: "This chapter explains variables and data types in programming."
+    orderTutorial: 2
+    tutorial: "@tutorial_1"
+
+  chapter_3:
+    title: "Introduction to CSS"
+    content: "Learn about CSS and how to style web pages."
+    orderTutorial: 1
+    tutorial: "@tutorial_2"
+
+  chapter_4:
+    title: "Responsive Design"
+    content: "Learn how to make your web pages responsive."
+    orderTutorial: 2
+    tutorial: "@tutorial_2"
+
+  chapter_5:
+    title: "Introduction to Algebra"
+    content: "Learn the basics of algebra."
+    orderTutorial: 1
+    tutorial: "@tutorial_3"
+
+  chapter_6:
+    title: "Algebraic Expressions"
+    content: "Learn about algebraic expressions."
+    orderTutorial: 2
+    tutorial: "@tutorial_3"
+
+  chapter_7:
+    title: "Introduction to Cells"
+    content: "Learn about cells and their functions."
+    orderTutorial: 1
+    tutorial: "@tutorial_4"
+
+  chapter_8:
+    title: "Cell Structure"
+    content: "Learn about the structure of cells."
+    orderTutorial: 2
+    tutorial: "@tutorial_4"
+
+  chapter_9:
+    title: "The Ancient World"
+    content: "Learn about the ancient world."
+    orderTutorial: 1
+    tutorial: "@tutorial_5"
+
+  chapter_10:
+    title: "The Middle Ages"
+    content: "Learn about the middle ages."
+    orderTutorial: 2
+    tutorial: "@tutorial_5"
+
+  chapter_11:
+    title: "Introduction to Forces"
+    content: "Learn about forces and how they work."
+    orderTutorial: 1
+    tutorial: "@tutorial_6"
+
+  chapter_12:
+    title: "Newton's Laws of Motion"
+    content: "Learn about Newton's laws of motion."
+    orderTutorial: 2
+    tutorial: "@tutorial_6"
+
+  chapter_13:
+    title: "Introduction to Elements"
+    content: "Learn about elements and the periodic table."
+    orderTutorial: 1
+    tutorial: "@tutorial_7"
+
+  chapter_14:
+    title: "Chemical Reactions"
+    content: "Learn about chemical reactions."
+    orderTutorial: 2
+    tutorial: "@tutorial_7"
+
+  chapter_15:
+    title: "Introduction to Geometry"
+    content: "Learn the basics of geometry."
+    orderTutorial: 1
+    tutorial: "@tutorial_8"
+
+  chapter_16:
+    title: "Geometric Shapes"
+    content: "Learn about geometric shapes."
+    orderTutorial: 2
+    tutorial: "@tutorial_8"
+
+  chapter_17:
+    title: "Introduction to Trigonometry"
+    content: "Learn the basics of trigonometry."
+    orderTutorial: 1
+    tutorial: "@tutorial_9"
+
+  chapter_18:
+    title: "Trigonometric Functions"
+    content: "Learn about trigonometric functions."
+    orderTutorial: 2
+    tutorial: "@tutorial_9"
+
+  chapter_19:
+    title: "Differential Calculus"
+    content: "Learn the basics of differential calculus."
+    orderTutorial: 2
+    tutorial: "@tutorial_10"
+
+  chapter_20:
+    title: "Introduction to Astronomy"
+    content: "Discover the basics of astronomy and the universe."
+    orderTutorial: 1
+    tutorial: "@tutorial_11"
+
+  chapter_21:
+    title: "Stars and Galaxies"
+    content: "Learn about stars and galaxies in astronomy."
+    orderTutorial: 2
+    tutorial: "@tutorial_11"
+
+  chapter_22:
+    title: "Introduction to Geology"
+    content: "Understand the basics of geology and Earth's structure."
+    orderTutorial: 1
+    tutorial: "@tutorial_12"
+
+  chapter_23:
+    title: "Rock Cycle"
+    content: "Learn about the rock cycle in geology."
+    orderTutorial: 2
+    tutorial: "@tutorial_12"
+
+  chapter_24:
+    title: "Introduction to Meteorology"
+    content: "Learn the fundamentals of weather and meteorology."
+    orderTutorial: 1
+    tutorial: "@tutorial_13"
+
+  chapter_25:
+    title: "Weather Patterns"
+    content: "Explore how weather patterns form and influence the climate."
+    orderTutorial: 2
+    tutorial: "@tutorial_13"
+
+  chapter_26:
+    title: "Introduction to Oceanography"
+    content: "Understand the oceans and their impact on Earth's environment."
+    orderTutorial: 1
+    tutorial: "@tutorial_14"
+
+  chapter_27:
+    title: "Ocean Currents"
+    content: "Learn about ocean currents and their role in global systems."
+    orderTutorial: 2
+    tutorial: "@tutorial_14"
+
+  chapter_28:
+    title: "Introduction to Botany"
+    content: "Explore the basics of plant biology and botany."
+    orderTutorial: 1
+    tutorial: "@tutorial_15"
+
+  chapter_29:
+    title: "Plant Anatomy"
+    content: "Learn about the structure of plants in detail."
+    orderTutorial: 2
+    tutorial: "@tutorial_15"
+
+  chapter_30:
+    title: "Introduction to Zoology"
+    content: "Discover the study of animals and their ecosystems."
+    orderTutorial: 1
+    tutorial: "@tutorial_16"
+
+  chapter_31:
+    title: "Animal Classification"
+    content: "Learn about the classification of animals in zoology."
+    orderTutorial: 2
+    tutorial: "@tutorial_16"
+
+  chapter_32:
+    title: "Introduction to Ecology"
+    content: "Understand ecosystems and the relationships within them."
+    orderTutorial: 1
+    tutorial: "@tutorial_17"
+
+  chapter_33:
+    title: "Ecosystem Dynamics"
+    content: "Learn how ecosystems function and maintain balance."
+    orderTutorial: 2
+    tutorial: "@tutorial_17"
+
+  chapter_34:
+    title: "Introduction to Environmental Science"
+    content: "Explore the science of environmental systems and issues."
+    orderTutorial: 1
+    tutorial: "@tutorial_18"
+
+  chapter_35:
+    title: "Environmental Impact"
+    content: "Understand how human activities impact the environment."
+    orderTutorial: 2
+    tutorial: "@tutorial_18"
+
+  chapter_36:
+    title: "Introduction to Psychology"
+    content: "Discover the basics of psychology and human behavior."
+    orderTutorial: 1
+    tutorial: "@tutorial_19"
+
+  chapter_37:
+    title: "Cognitive Processes"
+    content: "Learn about cognition and mental processes in psychology."
+    orderTutorial: 2
+    tutorial: "@tutorial_19"
+
+  chapter_38:
+    title: "Introduction to Sociology"
+    content: "Understand the foundations of sociology and society."
+    orderTutorial: 1
+    tutorial: "@tutorial_20"
+
+  chapter_39:
+    title: "Social Structures"
+    content: "Explore the organization of societies and their dynamics."
+    orderTutorial: 2
+    tutorial: "@tutorial_20"
+
+  chapter_40:
+    title: "Introduction to Anthropology"
+    content: "Learn about human evolution and cultural anthropology."
+    orderTutorial: 1
+    tutorial: "@tutorial_21"
+
+  chapter_41:
+    title: "Cultural Practices"
+    content: "Study the diverse cultural practices of societies."
+    orderTutorial: 2
+    tutorial: "@tutorial_21"
+
+  chapter_42:
+    title: "Introduction to Political Science"
+    content: "Discover the principles of politics and governance."
+    orderTutorial: 1
+    tutorial: "@tutorial_22"
+
+  chapter_43:
+    title: "Political Systems"
+    content: "Learn about different political systems and ideologies."
+    orderTutorial: 2
+    tutorial: "@tutorial_22"
+
+  chapter_44:
+    title: "Introduction to Economics"
+    content: "Understand the basics of economics and resource management."
+    orderTutorial: 1
+    tutorial: "@tutorial_23"
+
+  chapter_45:
+    title: "Supply and Demand"
+    content: "Learn the principles of supply and demand in economics."
+    orderTutorial: 2
+    tutorial: "@tutorial_23"
+
+  chapter_46:
+    title: "Introduction to Geography"
+    content: "Discover the physical and human aspects of geography."
+    orderTutorial: 1
+    tutorial: "@tutorial_24"
+
+  chapter_47:
+    title: "World Regions"
+    content: "Explore the regions of the world and their characteristics."
+    orderTutorial: 2
+    tutorial: "@tutorial_24"
+

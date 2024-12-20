@@ -1,0 +1,98 @@
+App\Entity\Tutorial:
+  tutorial_1:
+    title: "Introduction to Programming"
+    description: "A beginner's guide to programming."
+    subject: '@subject_1' 
+  tutorial_2:
+    title: "Web Design Basics"
+    description: "Learn the foundations of web design."
+    subject: '@subject_2' 
+  tutorial_3:
+    title: "Algebra Basics"
+    description: "Learn the basics of algebra."
+    subject: '@subject_3'
+  tutorial_4:
+    title: "Introduction to Biology"
+    description: "Learn the basics of biology."
+    subject: '@subject_4'
+  tutorial_5:
+    title: "World History"
+    description: "Learn about world history."
+    subject: '@subject_5'
+  tutorial_6:
+    title: "Introduction to Physics"
+    description: "Learn the basics of physics."
+    subject: '@subject_4'
+  tutorial_7:
+    title: "Introduction to Chemistry"
+    description: "Learn the basics of chemistry."
+    subject: '@subject_4'
+  tutorial_8:
+    title: "Introduction to Geometry"
+    description: "Learn the basics of geometry."
+    subject: '@subject_3'
+  tutorial_9:
+    title: "Introduction to Trigonometry"
+    description: "Learn the basics of trigonometry."
+    subject: '@subject_3'
+  tutorial_10:
+    title: "Introduction to Calculus"
+    description: "Learn the basics of calculus."
+    subject: '@subject_3'
+  tutorial_11:
+    title: "Introduction to Astronomy"
+    description: "Learn the basics of astronomy."
+    subject: '@subject_4'
+  tutorial_12:
+    title: "Introduction to Geology"
+    description: "Learn the basics of geology."
+    subject: '@subject_4'
+  tutorial_13:
+    title: "Introduction to Meteorology"
+    description: "Learn the basics of meteorology."
+    subject: '@subject_4'
+  tutorial_14:
+    title: "Introduction to Oceanography"
+    description: "Learn the basics of oceanography."
+    subject: '@subject_4'
+  tutorial_15:
+    title: "Introduction to Botany"
+    description: "Learn the basics of botany."
+    subject: '@subject_4'
+  tutorial_16:
+    title: "Introduction to Zoology"
+    description: "Learn the basics of zoology."
+    subject: '@subject_4'
+  tutorial_17:
+    title: "Introduction to Ecology"
+    description: "Learn the basics of ecology."
+    subject: '@subject_4'
+  tutorial_18:
+    title: "Introduction to Environmental Science"
+    description: "Learn the basics of environmental science."
+    subject: '@subject_4'
+  tutorial_19:
+    title: "Introduction to Psychology"
+    description: "Learn the basics of psychology."
+    subject: '@subject_4'
+  tutorial_20:
+    title: "Introduction to Sociology"
+    description: "Learn the basics of sociology."
+    subject: '@subject_4'
+  tutorial_21:
+    title: "Introduction to Anthropology"
+    description: "Learn the basics of anthropology."
+    subject: '@subject_4'
+  tutorial_22:
+    title: "Introduction to Political Science"
+    description: "Learn the basics of political science."
+    subject: '@subject_5'
+  tutorial_23:
+    title: "Introduction to Economics"
+    description: "Learn the basics of economics."
+    subject: '@subject_5'
+  tutorial_24:
+    title: "Introduction to Geography"
+    description: "Learn the basics of geography."
+    subject: '@subject_5'
+

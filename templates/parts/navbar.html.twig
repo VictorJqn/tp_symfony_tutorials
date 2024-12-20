@@ -1,0 +1,41 @@
+{% block body %}
+<nav class="bg-gray-800 p-4">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button (if needed) -->
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                <a href="/" class="text-white text-2xl font-semibold">MyWebsite</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                {% if app.user %}
+                    <div class="text-white">
+                        {{ app.user.name }} 
+                    </div>
+                    
+                        {% if 'ROLE_admin' in app.user.roles %}
+                            <a href="{{ path('admin_index') }}" class="text-white bg-green-600 px-4 py-2 rounded-md hover:bg-green-700">
+                                Admin Panel
+                            </a>
+                        {% endif %}
+                        {% if 'ROLE_user' in app.user.roles %}
+                            <a href="{{ path('user_profile') }}" class="text-white bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700">
+                                My Profile
+                            </a>
+                        {% endif %}
+                        <form method="post" action="{{ path('app_logout') }}" class="inline">
+                            <button type="submit" class="text-white bg-red-600 px-4 py-2 rounded-md hover:bg-red-700">
+                                Logout
+                            </button>
+                        </form>
+                {% else %}
+                    <a href="{{ path('app_login') }}" class="text-white bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700">
+                        Login
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</nav>
+{% endblock %}
