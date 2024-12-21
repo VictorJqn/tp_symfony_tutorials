@@ -26,7 +26,7 @@ final class SubjectController extends AbstractController
     }
 
     #[Route('/new', name: 'app_subject_new', methods: ['GET', 'POST'])]
-    #[IsGranted(attribute: 'admin')] 
+    #[IsGranted(attribute: 'ROLE_admin')] 
 
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -56,7 +56,7 @@ final class SubjectController extends AbstractController
     }
 
     #[Route('/{id}/edit', name: 'app_subject_edit', methods: ['GET', 'POST'])]
-    #[IsGranted(attribute: 'admin')] 
+    #[IsGranted(attribute: 'ROLE_admin')] 
 
     public function edit(Request $request, Subject $subject, EntityManagerInterface $entityManager): Response
     {
@@ -76,7 +76,7 @@ final class SubjectController extends AbstractController
     }
 
     #[Route('/{id}', name: 'app_subject_delete', methods: ['POST'])]
-    #[IsGranted(attribute: 'admin')] 
+    #[IsGranted(attribute: 'ROLE_admin')] 
 
     public function delete(Request $request, Subject $subject, EntityManagerInterface $entityManager): Response
     {

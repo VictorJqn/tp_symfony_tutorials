@@ -26,7 +26,7 @@ final class CommentsController extends AbstractController
     }
 
     #[Route('/new', name: 'app_comments_new', methods: ['GET', 'POST'])]
-    #[IsGranted(attribute: 'admin')] 
+    #[IsGranted(attribute: 'ROLE_admin')] 
 
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -57,7 +57,7 @@ final class CommentsController extends AbstractController
     }
 
     #[Route('/{id}/edit', name: 'app_comments_edit', methods: ['GET', 'POST'])]
-    #[IsGranted(attribute: 'admin')] 
+    #[IsGranted(attribute: 'ROLE_admin')] 
 
     public function edit(Request $request, Comments $comment, EntityManagerInterface $entityManager): Response
     {

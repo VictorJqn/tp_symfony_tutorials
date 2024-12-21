@@ -22,7 +22,7 @@ class Tutorial
     private ?string $description = null;
 
     #[ORM\ManyToOne(inversedBy: 'tutorials')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(nullable: false, onDelete: "CASCADE")]
     private ?Subject $subject = null;
 
     /**

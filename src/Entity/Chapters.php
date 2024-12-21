@@ -23,7 +23,7 @@ class Chapters
     private ?string $content = null;
 
     #[ORM\ManyToOne(inversedBy: 'chapters')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(nullable: false, onDelete: "CASCADE")]
     private ?Tutorial $tutorial = null;
 
     #[ORM\Column]

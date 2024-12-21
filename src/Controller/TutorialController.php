@@ -25,7 +25,7 @@ final class TutorialController extends AbstractController
     }
 
     #[Route('/new', name: 'app_tutorial_new', methods: ['GET', 'POST'])]
-    #[IsGranted(attribute: 'admin')] 
+    #[IsGranted(attribute: 'ROLE_admin')] 
 
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -55,7 +55,7 @@ final class TutorialController extends AbstractController
     }
 
     #[Route('/{id}/edit', name: 'app_tutorial_edit', methods: ['GET', 'POST'])]
-    #[IsGranted(attribute: 'admin')] 
+    #[IsGranted(attribute: 'ROLE_admin')] 
 
     public function edit(Request $request, Tutorial $tutorial, EntityManagerInterface $entityManager): Response
     {
@@ -75,7 +75,7 @@ final class TutorialController extends AbstractController
     }
 
     #[Route('/{id}', name: 'app_tutorial_delete', methods: ['POST'])]
-    #[IsGranted(attribute: 'admin')] 
+    #[IsGranted(attribute: 'ROLE_admin')] 
 
     public function delete(Request $request, Tutorial $tutorial, EntityManagerInterface $entityManager): Response
     {
